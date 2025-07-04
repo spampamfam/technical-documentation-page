@@ -6,32 +6,33 @@
   scroll-behavior: smooth;
   font-family: outfit, sans-serif;
 }
-
+@media (max-width: 1242px) {
+  .nav-container {
+    min-width: 250px;
+    width: 50px;
+  }
+}
 .container {
   display: flex;
   width: 100%;
 }
 
-.header {
+.nav-container header {
   display: block;
-  position: fixed;
-  padding-left: auto;
-  margin-left: 15px;
-  width: 300px;
+  margin: 0.8rem auto;
+  width: 200px;
+  height: 35px;
+  font-size: 1.5rem;
 }
 
 .nav-container {
   display: block;
   position: fixed;
-  top: 90px;
-  margin-left: 15px;
   width: 300px;
-  height: 85vh;
+  height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  border: 3px solid #4d4e53;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-right: 3px solid #4d4e53;
 }
 
 h1 {
@@ -43,14 +44,10 @@ h1 {
 
 .nav-container nav ul li {
   list-style-type: none;
-  padding: 1rem 0 1rem 1.6rem;
-  font-size: 1.2rem;
+  padding: 0.8rem 0 1rem 1.6rem;
+  font-size: 1rem;
   border-top: 1px solid #4d4e53;
   width: 100%;
-}
-
-.nav-container nav ul li:first-of-type {
-  border-top: none;
 }
 
 .nav-container nav ul a {
@@ -69,7 +66,7 @@ h2 {
   margin-top: 0.5rem;
 }
 
-.text-block {
+.main-section {
   max-width: 1000px; /* limits width for better readability */
   margin: 10px 0 0 100px; /* centers it horizontally */
   padding: 15px auto; /* adds padding for better spacing */
@@ -78,7 +75,7 @@ h2 {
   line-height: 1.6;
 }
 
-.text-block2 {
+.main-section2 {
   max-width: 1000px; /* limits width for better readability */
   margin: 10px 0 0 0px; /* centers it horizontally */
   padding: 15px auto; /* adds padding for better spacing */
@@ -110,7 +107,7 @@ h3 {
   margin-left: -70px;
 }
 
-.code-snippet {
+code {
   font-family: "Courier Prime", monospace;
   font-weight: 100;
   font-size: 0.8rem;
@@ -119,7 +116,7 @@ h3 {
   width: 100%;
   text-align: left; /* ✅ Keep text left-aligned */
   background-color: transparent;
-  padding-left: 100px;
+  padding-left: 20px;
 }
 
 .sub-list {
