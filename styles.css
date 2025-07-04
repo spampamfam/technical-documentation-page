@@ -127,7 +127,7 @@ code {
   .nav-container {
     width: 30% !important;
     border-right: 2px solid #4d4e53 !important;
-    height: 95vh !important;
+    height: 100vh !important;
   }
 
   .nav-container nav ul a {
